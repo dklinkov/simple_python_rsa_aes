@@ -29,7 +29,7 @@ def keysgen(prj_name):
 
 
 def encrypt(plain_path, pub_key):
-    """Шифрование архива plaintext.rar"""
+    """Шифрование файла"""
     # Генерация сессионного ключа симметричного шифрования для алгоритма AES
     sessionkey = Random.new().read(32)  # 256 бит
     # Загрузка в память архива для зашифрования в двоичном виде
@@ -52,6 +52,7 @@ def encrypt(plain_path, pub_key):
 
 
 def decrypt(enc_path, sec_key):
+    """Расшифровка файла"""
     # Расшифровка сессионного ключа закрытым (секретным) ключом по алгоритму RSA
     privatekey = RSA.importKey(open(sec_key, 'rb').read())
     cipherrsa = PKCS1_OAEP.new(privatekey)

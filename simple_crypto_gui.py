@@ -1,10 +1,6 @@
-try:
-    from simple_crypto_utils import keysgen, encrypt, decrypt
-    import easygui
-    import os
-except Exception as exc:
-    print(exc)
-    input("any")
+from simple_crypto_utils import keysgen, encrypt, decrypt
+import easygui
+import os
 
 
 message = "Выберите необходимое действие"

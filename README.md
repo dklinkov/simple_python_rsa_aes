@@ -1,4 +1,5 @@
 # Simple Python rsa_aes
+### This project is licensed under the terms of the MIT license
 ## Описание
 
 Приложение Simple Python rsa_aes (далее - приложение) предназначено для простого шифрования файлов (в т.ч. архивов) 
